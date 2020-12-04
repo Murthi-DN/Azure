@@ -1,0 +1,81 @@
+What is Cloud Computing?
+Is a use of Hardware and Software components to deliver a service to a Network
+Users can access file and applications from any device that can access Internet
+
+
+GCP Services
+1. Compute
+	App Engine
+	Compute Engine
+	Kubernetes Engine
+	Cloud Functions
+	Cloud Run
+
+2. Storage & Database
+	Cloud Staorage
+	Cloud SQL
+	Cloud Bigtabel
+	Cloud Spanner
+	Cloud Datastore
+	Persistent Disk
+	Cloud Memory Store
+
+3. Networking
+	VPC
+	Cloud Load Balancing
+	Cloud Armor
+	Cloud CDN
+	Cloud Interconnect
+	Cloud DNS
+	Network Service Tiers
+
+4. Big Data
+	Big Query
+	Cloud
+	Cloud Dataproc
+	Cloud Composer
+	Cloud Datalab
+	Cloud Dataprep
+	Cloud Pub/Sub
+	Cloud Data Studio
+
+5. Developer Tools
+	Cloud SDK
+	Deployment Manager
+	Cloud Source
+	Repositories
+	Cloud Test Lab
+
+6. Identity & Security
+	Cloud Identity
+	Cloud IAM
+	Cloud Identity-Aware
+	Proxy
+	Cloud Data Loss Prevention API
+	Security Key Enforcement
+	Cloud Key Management Service
+
+7. IoT
+	Cloud IoT Core
+	Edge TPU
+	Cloud IoT
+
+8. Cloud AI
+	Cloud AutoML
+	Cloud TPU
+	Cloud Machine Learning Engine
+	Cloud Job Discovery
+	Dialogflow Enterprice
+	Cloud Natural Language
+	Cloud
+	Cloud Text-To-Speech
+
+9. API Platform
+	Maps Platform
+	Apigee API Platform
+	API Monetization
+	Developer Portal
+	API Analytics
+	Apigee Sense
+	Cloud Endpoints
+	Service Infrastructure
