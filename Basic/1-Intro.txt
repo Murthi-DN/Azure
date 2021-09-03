@@ -1,7 +1,0 @@
-
-What is Cloud Computing?
-
-	* Is a use of Hardware and Software components to deliver a service to a Network
-
-	* Users can access file and applications from any device that can access Internet
-

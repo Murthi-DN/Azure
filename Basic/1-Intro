@@ -1,0 +1,115 @@
+---------------------------------------------------------------------------------
+
+What is Cloud?
+
+	* Cloud is a server that is accessed over the Internet, and the software and databases that run on those servers
+
+	* Cloud servers are located in data centers all over the world
+
+	* By using cloud computing, users and companies do not have to manage physical servers themselves or run software applications on their own machines
+
+---------------------------------------------------------------------------------
+
+What is Cloud Computing?
+
+	* Is a use of Hardware and Software components to deliver a service to a Network
+
+	* Users can access file and applications from any device that can access Internet
+
+---------------------------------------------------------------------------------
+
+CapEx (Capital Expense)
+
+	Initial Investment for Data Center
+	Ex: Data Centers by Providers
+
+OpEx (Operating Expense)
+
+	Pay for what we use on ongoing process, or operational time expense
+	Ex: What we use by paying, everything available, just use it
+
+---------------------------------------------------------------------------------
+
+Cloud Services:
+
+IaaS (Infrastructure as a Service)
+
+	* Cloud provides underlying platform, ex: Compute, Networking, Storage
+
+	* Client is responsible for handling infra
+
+	* Ex: Virtual Machines
+
+
+PaaS (Platform as a Service)
+
+	* Cloud provides platform for running apps
+
+	* Gives Compute, Networking, Storage, RunTime Environment
+
+	* User just need to bring Code
+
+	* Ex: Web Apps
+
+	* Client has no access to underlying machines
+
+
+SaaS (Software as a Service)
+
+	* Software running on cloud
+
+	* User doesn't need to install Run Time Environment
+
+	* Ex: Gmail, Office 365 - We have no idea of it's infra, language used to develop, database. We just use it
+
+	* We have no access to infra
+
+---------------------------------------------------------------------------------
+
+Types of Cloud:
+
+1. Public Cloud:
+
+	* Cloud is set up in the public network
+
+	* Managed by large companies
+
+	* Accesible through internet
+
+	* Accesible to all clients
+
+	* Client has no access to underlying infrastructure
+
+	Ex: AWS, Azure, GCP
+
+
+2. Private Cloud
+	
+	* Cloud is set up in orgranization's premises
+
+	* Managed by orgranization's IT team
+
+	* Accessible only orgranization's network
+
+	* Avaiable to users from orgranization
+
+	* Unauthenticated or External users don't have access to it
+
+	* Uses private cloud infrastructure
+
+	* Mainly we use it bcz of security reasons, we don't want to expose them to public
+
+	* Ex: VM Ware Cloud, RedHat OpenShift, Azure Stack
+
+
+3. Hybrid Cloud
+
+	* Set up in an orgranization's premises but also connected to Public cloud
+
+	* Workload can be separated between 2 clouds
+
+	* Ex: Sensitive Data in orgranization premises and public data in public cloud
+
+	* LinkedIn: Username and Paswords can be stored in private cloud, users profiles can be stored in public cloud 
+
+	* Ex: Azure Arc, AWS outposts 
