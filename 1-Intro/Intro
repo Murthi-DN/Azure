@@ -113,3 +113,99 @@ Types of Cloud:
 	* LinkedIn: Username and Paswords can be stored in private cloud, users profiles can be stored in public cloud 
 
 	* Ex: Azure Arc, AWS outposts 
+
+
+---------------------------------------------------------------------------------
+
+Region: Contains Multiple Zones
+
+Zone: Contains Multiple Data Centers
+
+Ex: Mysuru is a Region, Ram Swamy Circle, Saraswati Puram are Zones
+
+Zone are great for availabilty if any Data Center fails
+
+---------------------------------------------------------------------------------
+
+Paired Regions:
+
+	* Duplicate Region
+
+	* For increased availabilty
+
+	* When full Region fails, other one replicates
+
+---------------------------------------------------------------------------------
+
+Subscription:
+
+	* Contains resources
+
+Account:
+
+	* Is Identity with access to resource in the subscription
+
+---------------------------------------------------------------------------------
+
+Resource Group:
+
+	* Logical container for resources
+
+	* Used to group resources
+
+	* Free
+
+---------------------------------------------------------------------------------
+
+Way to access
+
+	* Portal
+
+	* AZ CLI
+
+	* Cloud Shell
+
+---------------------------------------------------------------------------------
+
+Availability Zones:
+	
+	* If a Region has more than 1 zone
+
+---------------------------------------------------------------------------------
+
+Management Groups
+
+	* Multiple subscriptions can be managed by Management Groups
+
+---------------------------------------------------------------------------------
+
+Management Groups -> Subscriptions -> Resource Groups -> Resource
+
+---------------------------------------------------------------------------------
+
+Storage Account
+
+	* Used to store almost anything/data
+
+	Ex: Database Backups, VM Disks, Diagnostic Data
+
+---------------------------------------------------------------------------------
+
+SLA (Service Level Aggrements)
+
+	* Uptime percent of cloud service 
+
+	* Ex: VM SLA - 99.99 %
+
+---------------------------------------------------------------------------------
+
+Pricing Models
+
+	* Per Resource Ex: VM
+
+	* Per Consumption Ex: Function App
+
+	* Reservation Ex: We pay before and use it, means we buy a VM for 3 years with some discounts
+
+---------------------------------------------------------------------------------
+
