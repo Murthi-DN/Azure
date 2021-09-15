@@ -1,0 +1,33 @@
+---------------------------------------------------------------------------------
+
+	* Small Function runs as a Result of an Event
+	* Response something when something happens in system
+	* Automatically managed by Azure
+	* Serverless
+
+---------------------------------------------------------------------------------
+
+Serverless	
+
+	* Cloud resource managed by Azure
+	* User don't need to think about CPU, Memory, VM...etc
+
+---------------------------------------------------------------------------------
+
+Triggerd and Binding
+
+	* Triggers trigger the Function on some event occur
+	* Binding means, connection between Function and Other Resources where it reads or writes
+
+---------------------------------------------------------------------------------
+
+Cold Start
+	
+	* Since Azure is taking care, if function service goes down, need few time to come up
+
+---------------------------------------------------------------------------------
+
+Durable Function
+	
+	* Stateful functions that interact with external resources and keep track of flow
+	* Good function chaining, means o/p of a function goes to i/p of another function

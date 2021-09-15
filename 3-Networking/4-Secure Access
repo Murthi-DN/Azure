@@ -1,0 +1,39 @@
+---------------------------------------------------------------------------------
+
+If Resource is in Public IP mode, easy for hackers!
+
+---------------------------------------------------------------------------------
+
+Types of Secure
+
+	1. JIT Access
+	2. VPN
+	3. Jump Box
+	4. Bastion
+
+---------------------------------------------------------------------------------
+
+JIT Access (Just In Time Access)
+
+	* Open Port for access on demand, close automatically
+	
+
+VPN (Virtual Private Network)
+
+	* Only authorized users in private network can access
+	* Need software...etc so complexity is more
+
+Jump Box
+
+	* Place another VM in VNET, allow access only to this
+	* If i need to access any resource, we should connect Jump Box, then it connects required one
+	* Only one port open, bit risky since one port is exposed
+
+
+Bastion
+
+	* Web Based connection
+	* No open Port is required 
+	* Simple and Secure
+	* Not FREE
+	* Requires Portal Access

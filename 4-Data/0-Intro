@@ -1,0 +1,32 @@
+---------------------------------------------------------------------------------
+
+	* Azure provides many data solutions as cloud service
+
+	* Ex: Relation databases, NoSQL, Object Store
+
+	* Are fully managed services
+
+	* We can also make independent or unmanaged by our own on VM, but we should control underlying
+
+	* Better to use managed service
+
+---------------------------------------------------------------------------------
+
+	* Mainly look for when selecting database
+
+		1. Security
+		2. Backup
+		3. Availability
+
+---------------------------------------------------------------------------------
+
+	* Azure SQL - Managed SQL server
+	* Cosmos DB - Managed NoSQL database
+	* Azure MySQL - Managed MySQL database 
+	* PostgreSQL - Managed PostgreSQL
+
+	* Storage - Object Store (Main)
+
+	* Azure Redis -  Fast in-memory database and cache, good for short lived, frequently accessed data
+
+---------------------------------------------------------------------------------

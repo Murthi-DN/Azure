@@ -1,0 +1,9 @@
+---------------------------------------------------------------------------------
+
+Better to keep sensitive resources in different VM and make it's peering for a good security
+
+---------------------------------------------------------------------------------
+
+	* To connect multiple VNET
+	* Can work accross Region
+	* Not FREE

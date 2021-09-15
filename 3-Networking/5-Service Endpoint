@@ -1,0 +1,17 @@
+---------------------------------------------------------------------------------
+
+"Lot of Resources can have Public IP and not in VNET" - Security Risk
+
+---------------------------------------------------------------------------------
+
+* Let's say a Resource in a VNET wants to talk to a Resource which is not in VNET, and that external one has Public IP
+
+* So VNET Resource has to Resource to Internet and then gets connected to External Resource
+
+* Security Risk comes
+
+* So Service Endpoint comes!!!
+
+* If i create a Service Endpoint for that External Resource, my VNET Resource can directly talk to External Resource with going to Public Internet
+
+---------------------------------------------------------------------------------

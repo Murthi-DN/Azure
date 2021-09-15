@@ -1,0 +1,30 @@
+---------------------------------------------------------------------------------
+
+	* Logical segment in the VNET
+	* Shares subset of VNET's IP range 
+	* Logical group of resources in VNET
+	* Resources must be placed in Subnets, can't place directly on VNET
+	* FREE, limited to 3000
+
+---------------------------------------------------------------------------------
+
+NSG (Network Security Group)
+
+	* Gatekeeper for subnets
+	* Defines who can connect of subnet
+	* Mini Firewall
+	* FREE
+
+How NSG works
+
+Looks at 5 things
+
+	1. Source
+	2. Source Port
+	3. Destination
+	4. Destination Port
+	5. Protocol (TCP/UDP)
+
+	This is called Security Rule
+
+---------------------------------------------------------------------------------
