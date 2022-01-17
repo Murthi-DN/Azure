@@ -1,23 +1,24 @@
----------------------------------------------------------------------------------
 
-	* Fully managed web hosting for websites
-	* PaaS
-	* No access underlying server
-	* Azure takes care of it's Servers
-	* Supports Auto Scale
+-------------------------------------------------------------------------
 
----------------------------------------------------------------------------------
+* Fully managed web hosting for websites
+* PaaS
+* No access underlying server
+* Azure takes care of it's Servers
+* Supports Auto Scale
+
+-------------------------------------------------------------------------
 
 Types:
 
-	* Web App
-	* Web API
-	* Web Jobs (Batch Process)
+* Web App
+* Web API
+* Web Jobs (Batch Process)
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
 ASE (App Service Environment)
 
-	* Advanced App Service with customizable, ex: to place in VNET or specific VM...etc
+* Advanced App Service with customizable, ex: to place in VNET or specific VM...etc
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------

@@ -1,138 +1,133 @@
----------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------
 
 Virtual (Non Real) server running on physical (Real) server
+Unmanaged Service - Azure doesn't interfere, since it's IaaS, we only should
 
-Unmanaged Service - Azure doesn't interfere, since it's IaaS, we only should...
+-------------------------------------------------------------------------
 
----------------------------------------------------------------------------------
+VM Architecture:
 
-VM Architecture
+* Host OS -> Hypervisor -> VMs
 
-Host OS -> Hypervisor -> VMs
-
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
 When we create VM, totally 5 things gets created
 
-	* VM
-	* Virtual Network
-	* Network Interface (To communicate)
-	* NSG
-	* Public IP
+* VM
+* Virtual Network
+* Network Interface (To communicate)
+* NSG
+* Public IP
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
-Cost of VM includes
+Cost of VM includes:
 
-	* VM
-	* Dsik
-	* IP
-	* Storage (VM image)
+* VM
+* Dsik
+* IP
+* Storage (VM image)
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
 VM cost can become more than it shows
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
 Effective ways to reduce VM cost
 
-	* Auto Shutdown
-	* Reserved Instances
-	* Spot Instances
-	* Disk Optimization
+* Auto Shutdown
+* Reserved Instances
+* Spot Instances
+* Disk Optimization
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
-1. Auto Shutdown
+Auto Shutdown
 	
-	* Automatically shutdown, when not in use
-	* Mainly for Test/Dev Env.
+* Automatically shutdown, when not in use
+* Mainly for Test/Dev Env
 
-2. Reserved Instances
+Reserved Instances
 
-	* Upfront payment, just buy it in beginning and use it
-	* Mainly Best option if a machine needs to be run continuosly or for PRODs
+* Upfront payment, just buy it in beginning and use it
+* Mainly Best option if a machine needs to be run continuosly or for PRODs
 
-3. Spot Instances
+Spot Instances
 	
-	* Machines that run on unused capacity Ex: Batch Process
+* Machines that run on unused capacity Ex: Batch Process
 
-4. Disk Optimiztion
+Disk Optimiztion
 	
-	* We should select best Disk while creating bcz by default expensive disk gets attached that is "Premium SSD"
+* We should select best Disk while creating bcz by default expensive disk gets attached that is "Premium SSD"
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
-Other ways of cost saving
+Other ways of cost saving:
 
-	* CPU should not rest, let it run
-	* Select Linux instead Windows (Costly)
-	* Check prices in nearby regions (price may vary between regions)
+* CPU should not rest, let it run
+* Select Linux instead Windows (Costly)
+* Check prices in nearby regions (price may vary between regions)
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
-How to ensure Availabilty? Availability concepts 
+How to ensure Availabilty?
 
 Make sure machines don't go down by following things or efectively create VMs across Azure
 
-	* Fault Domain
-		
-		* Rack in Data centers (Physical hardware with same power n network switch)
-		* So if ther's a problem in Rack, then all servers will go down
-		* Make sure my machine is spreaded across more than one Fault Domain/Rack
+Fault Domain:
+	
+* Rack in Data centers (Physical hardware with same power n network switch)
+* So if ther's a problem in Rack, then all servers will go down
+* Make sure my machine is spreaded across more than one Fault Domain/Rack
 
-	* Update Domain
+Update Domain:
 
-		* Rack may go down due to maintainance, so it'll be Rebooted, then our VM also reboots
-		* So if my VM is running in same Update Doamin, they'll also be Rebooted
-		* So make sure VMs are spreaded across multiple Update Domain
+* Rack may go down due to maintainance, so it'll be Rebooted, then our VM also reboots
+* So if my VM is running in same Update Doamin, they'll also be Rebooted
+* So make sure VMs are spreaded across multiple Update Domain
 
-	* Availabilty Set
+Availabilty Set:
 
-		* Collection of Fault and Update Doamin
-		* Upto 3 Fault, 20 Update Domains
-		* All these in same zone
+* Collection of Fault and Update Doamin
+* Upto 3 Fault, 20 Update Domains
+* All these in same zone
+* Availabilty set is FREE, but paying only Additional VMs
+* If we are deploying more than one VM for same system, make sure to set it in Different Availabilty Set, unless we need it in same Zone
+* Fault Domain (Rack) contains multiple Update Domains!
 
-		* Availabilty set is FREE, but paying only Additional VMs
-		* If we are deploying more than one VM for same system, make sure to set it in Different Availabilty Set, unless we need it in same Zone
+Availabilty Zone:
 
+* Separate Zone in same Region
+* Separate building
+* Deploy same VMs into separate availabilty zones in same region
+* Availabilty Zone is FREE, but pay only for Addional VMs
 
-		* Fault Domain (Rack) contains multiple Update Domains!
-
-	* Availabilty Zone
-
-		* Separate Zone in same Region
-		* Separate building
-
-		* Deploy same VMs into separate availabilty zones in same region
-
-		* Availabilty Zone is FREE, but pay only for Addional VMs
-
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
 We can select only type, either Availability Zone or Set
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
-ARM (Azure Resource Management)
+ARM (Azure Resource Management):
 
-	* JSON file, where Azure creates automatically
+* JSON file, where Azure creates automatically
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
-VM Scale Set
+VM Scale Set:
 
-	* Group of VMs with same image
-	* To handle load, it may increase or decrease
-	* Once setup, no modification, bcz new one gets created by original image
-	* If need update, create image then go ahead
-	* FREE
+* Group of VMs with same image
+* To handle load, it may increase or decrease
+* Once setup, no modification, bcz new one gets created by original image
+* If need update, create image then go ahead
+* FREE
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
-Azure Instance Metadata Service
+Azure Instance Metadata Service:
 
-	* API to access the details of VMs
+* API to access the details of VMs
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------

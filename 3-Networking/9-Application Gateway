@@ -1,28 +1,28 @@
----------------------------------------------------------------------------------
 
-	* Web Traffic Load Balancer
+-------------------------------------------------------------------------
 
-	* Same as LB but additional features
+* Web Traffic Load Balancer
 
-		* Autoscaling
-		* URL based routing
-		* Custom error pages
-		* Header and URL rewrite
-		* WAF (Web Application Firewall) - Protects apps from attacks 
-		* SSL termination
-		* Zone redundancy
-		* More
+* Same as LB but additional features
 
-	* Has to be in it's own VNET and Subnet
+	* Autoscaling
+	* URL based routing
+	* Custom error pages
+	* Header and URL rewrite
+	* WAF (Web Application Firewall) - Protects apps from attacks 
+	* SSL termination
+	* Zone redundancy
 
----------------------------------------------------------------------------------
+* Has to be in it's own VNET and Subnet
+
+-------------------------------------------------------------------------
 
 5 Configurations
 
-	1. Backend Pools
-	2. HTTPS Settings
-	3. Frontend IP configuration
-	4. Listeners - Recieves on specific port and protocol
-	5. Rules - To connect backend pools
+1. Backend Pools
+2. HTTPS Settings
+3. Frontend IP configuration
+4. Listeners - Recieves on specific port and protocol
+5. Rules - To connect backend pools
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------

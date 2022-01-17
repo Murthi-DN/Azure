@@ -1,101 +1,101 @@
----------------------------------------------------------------------------------
 
-	* Object Store
+-------------------------------------------------------------------------
 
-	* We can store files, videos, audios
+* Object Store
+* We can store files, videos, audios
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
-5 Types
+5 Types:
 
-	1. Blobs - Object store as above
-	2. Files - File share for cloud
-	3. Queues - Queues Ex: Kafka
-	4. Tables - NoSQL data store 
-	5. Disks - Storage for VMs - managed by VM
+1. Blobs - Object store as above
+2. Files - File share for cloud
+3. Queues - Queues Ex: Kafka
+4. Tables - NoSQL data store 
+5. Disks - Storage for VMs - managed by VM
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
-Blob (Binary Large Object)
+Blob (Binary Large Object):
 
-	* To store Files, videos, documents, large files
+* To store Files, videos, documents, large files
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
 Architecture
 
-	* Storage Account -> Container -> Blob
+* Storage Account -> Container -> Blob
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
-6 Redundancy
+6 Redundancy:
 
-	1. LRS (Locally Redundant Storage)
-		Data is copied 3 times in same zone
+1. LRS (Locally Redundant Storage)
+	Data is copied 3 times in same zone
 
-	2. ZRS (Zone Redundant Storage)
-		Copied in 3 zones in same region
+2. ZRS (Zone Redundant Storage)
+	Copied in 3 zones in same region
 
-	3. GRS (Geo Redundant Storage)
-		Copied in 3 same zones and copied asynchronously to paired region, accessed on failover 
+3. GRS (Geo Redundant Storage)
+	Copied in 3 same zones and copied asynchronously to paired region, accessed on failover 
 
-	4. GZRS (Geo Zone Redundant Storage)
-		Copied synchronously to 3 zones and asynchronously to paired region, accessed over failover
+4. GZRS (Geo Zone Redundant Storage)
+	Copied synchronously to 3 zones and asynchronously to paired region, accessed over failover
 
-	5. RA-GRS (Read Access Geo Zone Redundant Storage)
-		Copied synchronously to 3 zones and asynchronously to paired region but read access in secondary region
+5. RA-GRS (Read Access Geo Zone Redundant Storage)
+	Copied synchronously to 3 zones and asynchronously to paired region but read access in secondary region
 
-	6. RA-GZRS (Read Access Geo Zone Redundant Storage)
-		Copied in 3 same zones and copied asynchronously to paired region but read access in secondary region
+6. RA-GZRS (Read Access Geo Zone Redundant Storage)
+	Copied in 3 same zones and copied asynchronously to paired region but read access in secondary region
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
-3 Types of Storage Tiers
+3 Types of Storage Tiers:
 
 Blobs are uploaded in one of these 3 tiers
 
-	1. Hot 
+1. Hot 
 
-		* Data accessed frequently
-		* High cost
-		* Ex: Files, videos...etc
+* Data accessed frequently
+* High cost
+* Ex: Files, videos...etc
 
-	2. Cool
+2. Cool
 
-		* Data accessed infrequently
-		* Low cost
-		* Must be stored at least 30 days, early deletion fees applies
-		* Ex: Short term back...etc
+* Data accessed infrequently
+* Low cost
+* Must be stored at least 30 days, early deletion fees applies
+* Ex: Short term back...etc
 
-	3. Archive
+3. Archive
 
-		* Data for archival
-		* Can take hours to retrieve 
-		* Must be stored at least 180 days, early deletion fees applies
+* Data for archival
+* Can take hours to retrieve 
+* Must be stored at least 180 days, early deletion fees applies
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
-Pricing based on following
+Pricing based on following:
 
-	1. Redundancy option
-	2. Tiers
-	3. Capacity
+1. Redundancy option
+2. Tiers
+3. Capacity
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
 We can use connection string to do anything on Storage Account
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
-CDN (Content Delivery Network)
+CDN (Content Delivery Network):
 
-Data will get downloaded to nearest Region and will be accessible for user
+* Data will get downloaded to nearest Region and will be accessible for user
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
-Storage Explorer
+Storage Explorer:
 
-	* Is an EXE file to see all Storage Accounts and all data
-	* Also we can do here as well all access
+* Is an EXE file to see all Storage Accounts and all data
+* Also we can access
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------

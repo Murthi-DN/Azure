@@ -1,52 +1,43 @@
----------------------------------------------------------------------------------
 
-	* A network in which we deploy cloud services
-	* Many cloud resources deployed in VNETs
-	* Logically separated from other VNETs
+-------------------------------------------------------------------------
 
-	* Resources in same VNET can communicate each other by default but not in another VNETs
-	* FREE but 50 VNETs per subscription
+* A network in which we deploy cloud services
+* Many cloud resources deployed in VNETs
+* Logically separated from other VNETs
+* Resources in same VNET can communicate each other by default but not in another VNETs
+* FREE but 50 VNETs per subscription
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
 Characteristics
 
-	* Scoped to single region, means can't span multiple regions, means, i can't create a VNET which has a resource from Region A and Region B, it has to be in same Region
+* Scoped to single region, means can't span multiple regions, means, i can't create a VNET which has a resource from Region A and Region B, it has to be in same Region
+* Scoped to single subscription
+* VNETs can be connected via PEERING
+* Segmented using Subnets, logical group
+* Protected using NSG on Subnets
 
-	* Scoped to single subscription
-
-	* VNETs can be connected via PEERING
-
-	* Segmented using Subnets, logical group
-
-	* Protected using NSG on Subnets
-
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
 Addressing
 
-	* VNETs has it's own Address Range
-	* By default, 65,536 addressed
-	* Expressed using CIDR Notation
+* VNETs has it's own Address Range
+* By default, 65,536 addressed
+* Expressed using CIDR Notation
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
-CIDR (Classless Inter-Domain Routing)
+CIDR (Classless Inter-Domain Routing):
 
-	* A method for representing IP range
+* A method for representing IP range
 
-	Ex:
+Ex:
 
-		* 109.186.149.240/24
+	* 109.186.149.240/24
+	* Each number is Binary, Four 8 bits each, 255 maximum
+	* 24 is range, means 3*8, first 3 numbers are address and last number (240) is range
+	* Range means 000 to 255
+	* So last number is having 256 address range
+	* Lower the range number, larger the range
 
-		* Each number is Binary, Four 8 bits each, 255 maximum
-
-		* 24 is range, means 3*8, first 3 numbers are address and last number (240) is range
-
-		* Range means 000 to 255
-
-		* So last number is having 256 address range
-
-		* Lower the range number, larger the range
-
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------

@@ -1,0 +1,66 @@
+
+-------------------------------------------------------------------------
+
+* Central identity and access management cloud service 
+* Controll Access by users, groups, roles
+
+-------------------------------------------------------------------------
+
+Tenant:
+
+* A specific instance of AD containing accounts and groups
+* Also called directory
+* Not part of subscription, existed beside subscription
+* For new subscription, a new Tenant creats automatically
+* Can be assigned to multiple subscriptions
+
+-------------------------------------------------------------------------
+
+Users and Groups:
+
+* Manages and Stores that are part of Tenant by AD
+
+-------------------------------------------------------------------------
+
+RBAC (Role Based Access Control):
+
+* Better when we need to provide access at role level
+* Instead of providing it in each user level, to avoid complexicity
+
+-------------------------------------------------------------------------
+ 
+3 Types of Roles:
+
+1. Owner
+2. Contributer (can't assign roles)
+3. Reader
+
+-------------------------------------------------------------------------
+
+Managed Identity:
+
+* Ability to assign AD identity to Azure reources
+* Means, Azure resources can connect to other resources using this identity
+* Means, no need to have credentials
+* 2 Types (System assigned and User assigned)
+
+-------------------------------------------------------------------------
+
+OAuth2:
+
+* Standard protocol for authentication and authorization 
+* Mainly used in Web Apps
+* Here we get access token to access resources
+* JWT Token (Json Web Token)
+* Client App requests Autorization server for token, uses it to access resources
+
+-------------------------------------------------------------------------
+
+Azure AD B2C:
+
+* Identity as a Service
+* A Business to Customer service 
+* Works with variuos identity providers
+* Ex: Sign-in with Apple
+
+-------------------------------------------------------------------------

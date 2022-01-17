@@ -1,39 +1,37 @@
----------------------------------------------------------------------------------
 
-    * Used between services
+-------------------------------------------------------------------------
 
----------------------------------------------------------------------------------
+* Used between services
 
-4 Types
+-------------------------------------------------------------------------
 
-    1. Storage Queues
-    2. Event Grid
-    3. Service Bus
-    4. Event Hub
+4 Types:
 
----------------------------------------------------------------------------------
+1. Storage Queues
+2. Event Grid
+3. Service Bus
+4. Event Hub
 
-Storage Queue
+-------------------------------------------------------------------------
+
+Storage Queue:
     
-    * Part of Storage Account
+* Part of Storage Account
 
+Event Grid:
 
-Event Grid
+* Event based architecture
+* Event -> Event grid - Event Handler (ex: Functions)
 
-    * Event based architecture
-    * Event -> Event grid - Event Handler (ex: functions)
+Service Bus:
 
+* Managed blown message queueing service
+* Supports point-to-point (Queue) or pub/sub service (ex: event grid)
 
-Service Bus
+Event Hub:
 
-    * Managed blown message queueing service
-    * Supports point-to-point (Queue) or pub/sub service (ex: event grid)
+* Big Data streaming platform
+* Managed Kafka implementation
+* Can recieve millions of events per minute
 
-
-Event Hub
-
-    * Big Data streaming platform
-    * Managed Kafka implementation
-    * Can recieve millions of events per minute
-    
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------

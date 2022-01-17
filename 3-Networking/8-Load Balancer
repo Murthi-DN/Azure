@@ -1,77 +1,72 @@
----------------------------------------------------------------------------------
 
-	* Distribute Traffic and Check VM Health
+-------------------------------------------------------------------------
 
-	* If VM is unhealthy, no traffic directed
+* Distribute Traffic and Check VM Health
+* If VM is unhealthy, no traffic directed
+* Can work with VM or Scale Set
+* Can be accessed by Public an Private
+* Layer 4 OSI Model (Transport)
+* Public Load Balancer - Gets traffic from internet
+* Private Load Balancer - gets traffic from internal VMs
 
-	* Can work with VM or Scale Set
+-------------------------------------------------------------------------
 
-	* Can be accessed by Public an Private
+Has 5 Tuples:
 
-	* Layer 4 OSI Model (Transport)
+* Source IP
+* SOurce Port
+* Destination IP
+* Destination Port
+* Protocol
 
-	* Public Load Balancer - Gets traffic from internet
+Gets traffic and check it's tuples and route accordingly to internal servers which is available 
 
-	* Private Load Balancer - gets traffic from internal VMs
+-------------------------------------------------------------------------
 
----------------------------------------------------------------------------------
+2 Types:
 
-Has 5 Tuples
+1. Basic 
+2. Standard
 
-	* Source IP
-	* SOurce Port
-	* Destination IP
-	* Destination Port
-	* Protocol
+-------------------------------------------------------------------------
 
-	Gets traffic and check it's tuples and route accordingly to internal servers which is available 
-
----------------------------------------------------------------------------------
-
-2 Types
-
-	1. Basic 
-	2. Standard
-
----------------------------------------------------------------------------------
-
-Basic
+Basic:
 	
-	* No Redundancy (Duplicate LB), so if it goes down, no LB
-	* Opens by default, no security protocols
-	* Supports upto 300 VMs to distribute traffic
-	* No SLA
-	* Not FREE
+* No Redundancy (No Duplicate LB), so if it goes down, no LB
+* Opens by default, no security protocols
+* Supports upto 300 VMs to distribute traffic
+* No SLA
+* Not FREE
 
 
-Standard
+Standard:
 
-	* Redundant, if one goes down, another one starts working
-	* Secured by default
-	* Supports upto 1000 VMs to distribute traffic
-	* 99.99% SLA
-	* Not FREE
+* Redundant, if one goes down, another one starts working
+* Secured by default
+* Supports upto 1000 VMs to distribute traffic
+* 99.99% SLA
+* Not FREE
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
-4 Configurations
+4 Configurations:
 
-	1. Frontend IP Configuration
+1. Frontend IP Configuration
 
-		* Exposes a public IP to recieve traffic and distributes
+* Exposes a public IP to recieve traffic and distributes
 
-	2. Backend Pools
+2. Backend Pools
 
-		* List of VMs, which LB will route traffic
+* List of VMs, which LB will route traffic
 
-	3. Health Probes
+3. Health Probes
 
-		* To check VM health, non healthy VM won't be considered
-		* Run every few seconds
-		* If a VM is failed 2 times in a row, marked as down (by default 2)
+* To check VM health, non healthy VM won't be considered
+* Run every few seconds
+* If a VM is failed 2 times in a row, marked as down (by default 2)
 
-	4. Load Balancing Rules
+4. Load Balancing Rules
 
-		* Based rules, LB distributes traffic
+* Based rules, LB distributes traffic
 
----------------------------------------------------------------------------------
+-------------------------------------------------------------------------
