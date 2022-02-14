@@ -4,7 +4,7 @@
 * Distribute Traffic and Check VM Health
 * If VM is unhealthy, no traffic directed
 * Can work with VM or Scale Set
-* Can be accessed by Public an Private
+* Can be accessed by Public and Private
 * Layer 4 OSI Model (Transport)
 * Public Load Balancer - Gets traffic from internet
 * Private Load Balancer - gets traffic from internal VMs
@@ -53,20 +53,20 @@ Standard:
 
 1. Frontend IP Configuration
 
-* Exposes a public IP to recieve traffic and distributes
+	* Exposes a public IP to recieve traffic and distributes
 
 2. Backend Pools
 
-* List of VMs, which LB will route traffic
+	* List of VMs, which LB will route traffic
 
 3. Health Probes
 
-* To check VM health, non healthy VM won't be considered
-* Run every few seconds
-* If a VM is failed 2 times in a row, marked as down (by default 2)
+	* To check VM health, non healthy VM won't be considered
+	* Run every few seconds
+	* If a VM is failed 2 times in a row, marked as down (by default 2)
 
 4. Load Balancing Rules
 
-* Based rules, LB distributes traffic
+	* Based rules, LB distributes traffic
 
 -------------------------------------------------------------------------

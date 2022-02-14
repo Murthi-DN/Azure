@@ -112,7 +112,7 @@ We can select only type, either Availability Zone or Set
 
 ARM (Azure Resource Management):
 
-* JSON file, where Azure creates automatically
+* Azure's Native IaC
 
 -------------------------------------------------------------------------
 
